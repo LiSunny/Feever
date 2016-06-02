@@ -8,21 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D53DBD661CFEB5C000FBF46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */; };
-		D53DBD681CFEB5C000FBF46B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD671CFEB5C000FBF46B /* ViewController.swift */; };
 		D53DBD6B1CFEB5C000FBF46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD691CFEB5C000FBF46B /* Main.storyboard */; };
 		D53DBD6D1CFEB5C000FBF46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD6C1CFEB5C000FBF46B /* Assets.xcassets */; };
 		D53DBD701CFEB5C000FBF46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD6E1CFEB5C000FBF46B /* LaunchScreen.storyboard */; };
 		D53DBD7B1CFEB5C000FBF46B /* SwiftLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD7A1CFEB5C000FBF46B /* SwiftLoginTests.swift */; };
 		D53DBD861CFEB5C000FBF46B /* SwiftLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD851CFEB5C000FBF46B /* SwiftLoginUITests.swift */; };
-		D53DBD971CFEB63000FBF46B /* bgimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD941CFEB63000FBF46B /* bgimage@2x.png */; };
-		D53DBD981CFEB63000FBF46B /* input@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD951CFEB63000FBF46B /* input@2x.png */; };
-		D53DBD991CFEB63000FBF46B /* loginBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD961CFEB63000FBF46B /* loginBtn@2x.png */; };
-		D53DBDA01CFECF2500FBF46B /* weChatICON@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD9A1CFECF2500FBF46B /* weChatICON@3x.png */; };
-		D53DBDA11CFECF2500FBF46B /* FEEVER@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD9B1CFECF2500FBF46B /* FEEVER@2x.png */; };
-		D53DBDA21CFECF2500FBF46B /* weFriend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD9C1CFECF2500FBF46B /* weFriend@2x.png */; };
-		D53DBDA31CFECF2500FBF46B /* sinaWeb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD9D1CFECF2500FBF46B /* sinaWeb@2x.png */; };
-		D53DBDA41CFECF2500FBF46B /* weChatIcon@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD9E1CFECF2500FBF46B /* weChatIcon@2X.png */; };
-		D53DBDA51CFECF2500FBF46B /* otherWay@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD9F1CFECF2500FBF46B /* otherWay@2X.png */; };
+		D5591F6C1D0012BC00A2630B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F6B1D0012BC00A2630B /* TabBarView.swift */; };
+		D5591F731D00136F00A2630B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F721D00136F00A2630B /* TabBarViewController.swift */; };
+		D5591F751D00137600A2630B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F741D00137600A2630B /* HomeViewController.swift */; };
+		D5591F771D00137E00A2630B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F761D00137E00A2630B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +39,6 @@
 /* Begin PBXFileReference section */
 		D53DBD621CFEB5C000FBF46B /* SwiftLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D53DBD671CFEB5C000FBF46B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D53DBD6A1CFEB5C000FBF46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D53DBD6C1CFEB5C000FBF46B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D53DBD6F1CFEB5C000FBF46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +49,10 @@
 		D53DBD811CFEB5C000FBF46B /* SwiftLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53DBD851CFEB5C000FBF46B /* SwiftLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoginUITests.swift; sourceTree = "<group>"; };
 		D53DBD871CFEB5C000FBF46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D53DBD941CFEB63000FBF46B /* bgimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgimage@2x.png"; sourceTree = "<group>"; };
-		D53DBD951CFEB63000FBF46B /* input@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input@2x.png"; sourceTree = "<group>"; };
-		D53DBD961CFEB63000FBF46B /* loginBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginBtn@2x.png"; sourceTree = "<group>"; };
-		D53DBD9A1CFECF2500FBF46B /* weChatICON@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weChatICON@3x.png"; sourceTree = "<group>"; };
-		D53DBD9B1CFECF2500FBF46B /* FEEVER@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FEEVER@2x.png"; sourceTree = "<group>"; };
-		D53DBD9C1CFECF2500FBF46B /* weFriend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weFriend@2x.png"; sourceTree = "<group>"; };
-		D53DBD9D1CFECF2500FBF46B /* sinaWeb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sinaWeb@2x.png"; sourceTree = "<group>"; };
-		D53DBD9E1CFECF2500FBF46B /* weChatIcon@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weChatIcon@2X.png"; sourceTree = "<group>"; };
-		D53DBD9F1CFECF2500FBF46B /* otherWay@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "otherWay@2X.png"; sourceTree = "<group>"; };
+		D5591F6B1D0012BC00A2630B /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D5591F721D00136F00A2630B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D5591F741D00137600A2630B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D5591F761D00137E00A2630B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +83,6 @@
 		D53DBD591CFEB5C000FBF46B = {
 			isa = PBXGroup;
 			children = (
-				D53DBD931CFEB63000FBF46B /* image */,
 				D53DBD641CFEB5C000FBF46B /* SwiftLogin */,
 				D53DBD791CFEB5C000FBF46B /* SwiftLoginTests */,
 				D53DBD841CFEB5C000FBF46B /* SwiftLoginUITests */,
@@ -116,8 +103,9 @@
 		D53DBD641CFEB5C000FBF46B /* SwiftLogin */ = {
 			isa = PBXGroup;
 			children = (
+				D5591F6D1D0012F300A2630B /* Controllers */,
+				D5591F691D0012AB00A2630B /* Views */,
 				D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */,
-				D53DBD671CFEB5C000FBF46B /* ViewController.swift */,
 				D53DBD691CFEB5C000FBF46B /* Main.storyboard */,
 				D53DBD6C1CFEB5C000FBF46B /* Assets.xcassets */,
 				D53DBD6E1CFEB5C000FBF46B /* LaunchScreen.storyboard */,
@@ -144,20 +132,62 @@
 			path = SwiftLoginUITests;
 			sourceTree = "<group>";
 		};
-		D53DBD931CFEB63000FBF46B /* image */ = {
+		D5591F691D0012AB00A2630B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D53DBD9A1CFECF2500FBF46B /* weChatICON@3x.png */,
-				D53DBD9B1CFECF2500FBF46B /* FEEVER@2x.png */,
-				D53DBD9C1CFECF2500FBF46B /* weFriend@2x.png */,
-				D53DBD9D1CFECF2500FBF46B /* sinaWeb@2x.png */,
-				D53DBD9E1CFECF2500FBF46B /* weChatIcon@2X.png */,
-				D53DBD9F1CFECF2500FBF46B /* otherWay@2X.png */,
-				D53DBD941CFEB63000FBF46B /* bgimage@2x.png */,
-				D53DBD951CFEB63000FBF46B /* input@2x.png */,
-				D53DBD961CFEB63000FBF46B /* loginBtn@2x.png */,
+				D5591F6A1D0012AB00A2630B /* HomeViews */,
 			);
-			path = image;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5591F6A1D0012AB00A2630B /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				D5591F6B1D0012BC00A2630B /* TabBarView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		D5591F6D1D0012F300A2630B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5591F6E1D0012F300A2630B /* SupperViewController */,
+				D5591F6F1D0012F300A2630B /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D5591F6E1D0012F300A2630B /* SupperViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5591F721D00136F00A2630B /* TabBarViewController.swift */,
+			);
+			path = SupperViewController;
+			sourceTree = "<group>";
+		};
+		D5591F6F1D0012F300A2630B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5591F701D00133200A2630B /* HomeViewControllers */,
+				D5591F711D00133200A2630B /* LoginViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D5591F701D00133200A2630B /* HomeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5591F741D00137600A2630B /* HomeViewController.swift */,
+			);
+			path = HomeViewControllers;
+			sourceTree = "<group>";
+		};
+		D5591F711D00133200A2630B /* LoginViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5591F761D00137E00A2630B /* ViewController.swift */,
+			);
+			path = LoginViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,18 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53DBDA31CFECF2500FBF46B /* sinaWeb@2x.png in Resources */,
 				D53DBD701CFEB5C000FBF46B /* LaunchScreen.storyboard in Resources */,
 				D53DBD6D1CFEB5C000FBF46B /* Assets.xcassets in Resources */,
 				D53DBD6B1CFEB5C000FBF46B /* Main.storyboard in Resources */,
-				D53DBDA01CFECF2500FBF46B /* weChatICON@3x.png in Resources */,
-				D53DBDA21CFECF2500FBF46B /* weFriend@2x.png in Resources */,
-				D53DBDA41CFECF2500FBF46B /* weChatIcon@2X.png in Resources */,
-				D53DBD991CFEB63000FBF46B /* loginBtn@2x.png in Resources */,
-				D53DBD971CFEB63000FBF46B /* bgimage@2x.png in Resources */,
-				D53DBD981CFEB63000FBF46B /* input@2x.png in Resources */,
-				D53DBDA11CFECF2500FBF46B /* FEEVER@2x.png in Resources */,
-				D53DBDA51CFECF2500FBF46B /* otherWay@2X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53DBD681CFEB5C000FBF46B /* ViewController.swift in Sources */,
+				D5591F771D00137E00A2630B /* ViewController.swift in Sources */,
 				D53DBD661CFEB5C000FBF46B /* AppDelegate.swift in Sources */,
+				D5591F731D00136F00A2630B /* TabBarViewController.swift in Sources */,
+				D5591F6C1D0012BC00A2630B /* TabBarView.swift in Sources */,
+				D5591F751D00137600A2630B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +554,7 @@
 				D53DBD8C1CFEB5C000FBF46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D53DBD8D1CFEB5C000FBF46B /* Build configuration list for PBXNativeTarget "SwiftLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +563,7 @@
 				D53DBD8F1CFEB5C000FBF46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D53DBD901CFEB5C000FBF46B /* Build configuration list for PBXNativeTarget "SwiftLoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +572,7 @@
 				D53DBD921CFEB5C000FBF46B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

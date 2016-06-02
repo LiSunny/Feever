@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController,UITextFieldDelegate{
+class ViewController:UIViewController,UITextFieldDelegate,HomeViewControllerDelegate{
     
     var  inputImageView:UIImageView?
+    var userNameTX:UITextField?
+    
     
     
     override func viewDidLoad() {
@@ -48,17 +51,19 @@ class ViewController: UIViewController,UITextFieldDelegate{
     }
     func CreatMaxTitleImage() -> Void {
         
-        let image = UIImage(named: "FEEVER@2x.png");
-        let imageView = UIImageView(image: image);
-        
-        imageView.frame = CGRectMake(115, 76, 145, 42);
-        self.view.addSubview(imageView);
+        let label = UILabel();
+        label.font = UIFont.init(name: "Arial Rounded MT Bold", size: 36);
+        label.text = "FEEVER";
+        label.textColor = UIColor.whiteColor();
+        label.frame = CGRectMake(115, 76, 145, 42);
+    
+        self.view.addSubview(label);
         
     }
     
     func CreatBgImageView() -> Void {
         
-        let image = UIImage(named:  "bgimage@2x.png");
+        let image = UIImage(named:  "bgimage");
         
         let bgImageView = UIImageView(image: image);
         bgImageView.frame = self.view.bounds;
@@ -70,7 +75,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     func CreatInputBgImageView() -> Void {
         
-        let image = UIImage(named: "input@2x.png");
+        let image = UIImage(named: "input");
         
         inputImageView = UIImageView(image: image);
         inputImageView?.userInteractionEnabled = true;
@@ -84,7 +89,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
         
         let loginBtn = UIButton(type: UIButtonType.Custom);
         loginBtn.frame = CGRectMake(271, 224, 68, 68);
-        loginBtn.setImage(UIImage(named: "loginBtn@2x.png"), forState: UIControlState.Normal);
+        loginBtn.setImage(UIImage(named: "loginBtn"), forState: UIControlState.Normal);
         loginBtn.addTarget(self, action: #selector(ViewController.loginBtnClick), forControlEvents: UIControlEvents.TouchUpInside);
         self.view.addSubview(loginBtn);
         
@@ -92,15 +97,15 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     func CreatUserNameTX() -> Void {
         
-        let userNameTX = UITextField();
-        userNameTX.borderStyle = UITextBorderStyle.None;
-        userNameTX.returnKeyType = UIReturnKeyType.Done;
-        userNameTX.placeholder = "用户名";
-        userNameTX.delegate = self;
-        userNameTX.textAlignment = NSTextAlignment.Center;
-        userNameTX.frame = CGRectMake(8, 34, 217, 33);
-        userNameTX.keyboardType = UIKeyboardType.NamePhonePad;
-        self.inputImageView?.addSubview(userNameTX);
+        userNameTX = UITextField();
+        userNameTX!.borderStyle = UITextBorderStyle.None;
+        userNameTX!.returnKeyType = UIReturnKeyType.Done;
+        userNameTX!.placeholder = "用户名";
+        userNameTX!.delegate = self;
+        userNameTX!.textAlignment = NSTextAlignment.Center;
+        userNameTX!.frame = CGRectMake(8, 34, 217, 33);
+        userNameTX!.keyboardType = UIKeyboardType.NamePhonePad;
+        self.inputImageView?.addSubview(userNameTX!);
         
     }
     
@@ -121,7 +126,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     func CreatOtherWay() -> Void {
         
-        let image = UIImage(named: "otherWay@2x.png");
+        let image = UIImage(named: "otherWay");
         
         let imageView = UIImageView(image: image);
         
@@ -132,7 +137,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     func CreatWeChat() -> Void {
         
-        let image = UIImage(named: "weChatICON@2x.png");
+        let image = UIImage(named: "weChatICON");
         
         let weChatBtn = UIButton(type: UIButtonType.Custom);
         weChatBtn.setImage(image, forState: UIControlState.Normal);
@@ -144,7 +149,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     func CreatSinaWeb() -> Void {
         
-        let image = UIImage(named: "sinaWeb@2x.png");
+        let image = UIImage(named: "sinaWeb");
         
         let sinaWebBtn = UIButton(type: UIButtonType.Custom);
         sinaWebBtn.setImage(image, forState: UIControlState.Normal);
@@ -155,7 +160,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     func CreatWeFriends() -> Void {
         
-        let image = UIImage(named: "weFriend@2x.png");
+        let image = UIImage(named: "qq");
         
         let weFriendsBtn = UIButton(type: UIButtonType.Custom);
         weFriendsBtn.setImage(image, forState: UIControlState.Normal);
@@ -170,6 +175,25 @@ class ViewController: UIViewController,UITextFieldDelegate{
         
         self.view.endEditing(true);
         NSLog("登陆");
+        
+        
+        let homeVC = HomeViewController();
+        homeVC.delegate = self;
+        homeVC.userName = userNameTX?.text;
+        let navController = UINavigationController(rootViewController:homeVC);
+        self .presentViewController(navController, animated: true) {
+            
+            
+        };
+    
+        
+        
+        
+    }
+    
+    func getMessage(message:NSString) -> Void {
+        
+        print(message);
         
     }
     
