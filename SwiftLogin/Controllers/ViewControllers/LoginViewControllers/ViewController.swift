@@ -137,7 +137,7 @@ class ViewController:UIViewController,UITextFieldDelegate,HomeViewControllerDele
     
     func CreatWeChat() -> Void {
         
-        let image = UIImage(named: "weChatICON");
+        let image = UIImage(named: "weChatIcon");
         
         let weChatBtn = UIButton(type: UIButtonType.Custom);
         weChatBtn.setImage(image, forState: UIControlState.Normal);
@@ -176,12 +176,30 @@ class ViewController:UIViewController,UITextFieldDelegate,HomeViewControllerDele
         self.view.endEditing(true);
         NSLog("登陆");
         
-        
+        //首页
         let homeVC = HomeViewController();
         homeVC.delegate = self;
         homeVC.userName = userNameTX?.text;
-        let navController = UINavigationController(rootViewController:homeVC);
-        self .presentViewController(navController, animated: true) {
+        let homeNavController = UINavigationController(rootViewController:homeVC);
+        
+        //消息页
+        let messageVC = MessageViewController();
+        let messageNavController = UINavigationController(rootViewController:messageVC);
+        
+        //设定页
+        let setVC = SetViewController();
+        let setNavController = UINavigationController(rootViewController:setVC);
+        
+        //个人中心页
+        let personVC = PersonViewController();
+        let personNavController = UINavigationController(rootViewController:personVC);
+        
+    
+        let tabBarController = UITabBarController();
+        tabBarController.tabBar.hidden = true;
+        tabBarController.viewControllers = [homeNavController,messageNavController,setNavController,personNavController];
+        
+        self .presentViewController(tabBarController, animated: true) {
             
             
         };

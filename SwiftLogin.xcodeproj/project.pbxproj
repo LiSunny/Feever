@@ -13,6 +13,11 @@
 		D53DBD701CFEB5C000FBF46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD6E1CFEB5C000FBF46B /* LaunchScreen.storyboard */; };
 		D53DBD7B1CFEB5C000FBF46B /* SwiftLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD7A1CFEB5C000FBF46B /* SwiftLoginTests.swift */; };
 		D53DBD861CFEB5C000FBF46B /* SwiftLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD851CFEB5C000FBF46B /* SwiftLoginUITests.swift */; };
+		D54FC1D81D0129C4005FFE64 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54FC1D71D0129C4005FFE64 /* SetViewController.swift */; };
+		D54FC1DA1D012AB5005FFE64 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54FC1D91D012AB5005FFE64 /* PersonViewController.swift */; };
+		D54FC1DC1D012AF0005FFE64 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54FC1DB1D012AF0005FFE64 /* MessageViewController.swift */; };
+		D54FC1DE1D012B77005FFE64 /* NavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54FC1DD1D012B77005FFE64 /* NavgationViewController.swift */; };
+		D54FC1E01D01534B005FFE64 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54FC1DF1D01534B005FFE64 /* HomeTableViewCell.swift */; };
 		D5591F6C1D0012BC00A2630B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F6B1D0012BC00A2630B /* TabBarView.swift */; };
 		D5591F731D00136F00A2630B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F721D00136F00A2630B /* TabBarViewController.swift */; };
 		D5591F751D00137600A2630B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5591F741D00137600A2630B /* HomeViewController.swift */; };
@@ -49,6 +54,12 @@
 		D53DBD811CFEB5C000FBF46B /* SwiftLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53DBD851CFEB5C000FBF46B /* SwiftLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoginUITests.swift; sourceTree = "<group>"; };
 		D53DBD871CFEB5C000FBF46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D54FC1D31D0117E8005FFE64 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D54FC1D71D0129C4005FFE64 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		D54FC1D91D012AB5005FFE64 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		D54FC1DB1D012AF0005FFE64 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		D54FC1DD1D012B77005FFE64 /* NavgationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavgationViewController.swift; sourceTree = "<group>"; };
+		D54FC1DF1D01534B005FFE64 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D5591F6B1D0012BC00A2630B /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		D5591F721D00136F00A2630B /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D5591F741D00137600A2630B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +121,7 @@
 				D53DBD6C1CFEB5C000FBF46B /* Assets.xcassets */,
 				D53DBD6E1CFEB5C000FBF46B /* LaunchScreen.storyboard */,
 				D53DBD711CFEB5C000FBF46B /* Info.plist */,
+				D54FC1D31D0117E8005FFE64 /* PrefixHeader.pch */,
 			);
 			path = SwiftLogin;
 			sourceTree = "<group>";
@@ -132,6 +144,30 @@
 			path = SwiftLoginUITests;
 			sourceTree = "<group>";
 		};
+		D54FC1D41D0129AF005FFE64 /* MessageViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D54FC1DB1D012AF0005FFE64 /* MessageViewController.swift */,
+			);
+			path = MessageViewControllers;
+			sourceTree = "<group>";
+		};
+		D54FC1D51D0129AF005FFE64 /* PersonViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D54FC1D91D012AB5005FFE64 /* PersonViewController.swift */,
+			);
+			path = PersonViewControllers;
+			sourceTree = "<group>";
+		};
+		D54FC1D61D0129AF005FFE64 /* SetViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D54FC1D71D0129C4005FFE64 /* SetViewController.swift */,
+			);
+			path = SetViewControllers;
+			sourceTree = "<group>";
+		};
 		D5591F691D0012AB00A2630B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D5591F6B1D0012BC00A2630B /* TabBarView.swift */,
+				D54FC1DF1D01534B005FFE64 /* HomeTableViewCell.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -161,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				D5591F721D00136F00A2630B /* TabBarViewController.swift */,
+				D54FC1DD1D012B77005FFE64 /* NavgationViewController.swift */,
 			);
 			path = SupperViewController;
 			sourceTree = "<group>";
@@ -168,6 +206,9 @@
 		D5591F6F1D0012F300A2630B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D54FC1D41D0129AF005FFE64 /* MessageViewControllers */,
+				D54FC1D51D0129AF005FFE64 /* PersonViewControllers */,
+				D54FC1D61D0129AF005FFE64 /* SetViewControllers */,
 				D5591F701D00133200A2630B /* HomeViewControllers */,
 				D5591F711D00133200A2630B /* LoginViewControllers */,
 			);
@@ -258,6 +299,7 @@
 				TargetAttributes = {
 					D53DBD611CFEB5C000FBF46B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 95BFKR6QPQ;
 					};
 					D53DBD751CFEB5C000FBF46B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -322,7 +364,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5591F771D00137E00A2630B /* ViewController.swift in Sources */,
+				D54FC1D81D0129C4005FFE64 /* SetViewController.swift in Sources */,
+				D54FC1DE1D012B77005FFE64 /* NavgationViewController.swift in Sources */,
+				D54FC1DC1D012AF0005FFE64 /* MessageViewController.swift in Sources */,
 				D53DBD661CFEB5C000FBF46B /* AppDelegate.swift in Sources */,
+				D54FC1DA1D012AB5005FFE64 /* PersonViewController.swift in Sources */,
+				D54FC1E01D01534B005FFE64 /* HomeTableViewCell.swift in Sources */,
 				D5591F731D00136F00A2630B /* TabBarViewController.swift in Sources */,
 				D5591F6C1D0012BC00A2630B /* TabBarView.swift in Sources */,
 				D5591F751D00137600A2630B /* HomeViewController.swift in Sources */,
@@ -469,11 +516,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/heavenli/Desktop/Demo程序/SwiftLogin/SwiftLogin/PrefixHeader.pch";
 				INFOPLIST_FILE = SwiftLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sfb.SwiftLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/heavenli/Desktop/Demo程序/SwiftLogin/SwiftLogin/PrefixHeader.pch";
 			};
 			name = Debug;
 		};
@@ -481,11 +534,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/heavenli/Desktop/Demo程序/SwiftLogin/SwiftLogin/PrefixHeader.pch";
 				INFOPLIST_FILE = SwiftLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sfb.SwiftLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/heavenli/Desktop/Demo程序/SwiftLogin/SwiftLogin/PrefixHeader.pch";
 			};
 			name = Release;
 		};
