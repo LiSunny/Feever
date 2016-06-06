@@ -9,13 +9,20 @@
 import Foundation
 import UIKit
 
-class SetViewController: TabBarViewController {
+class SetViewController: TabBarViewController ,UITableViewDelegate,UITableViewDataSource {
+    
+    var titleArr:NSMutableArray?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad();
         
+        titleArr = [["帐号管理"],["通知","隐私与安全","通用设置"],["清理缓存","意见返回","关于feever"],["退出登录"]];
+        
+        
         self.CreatTabBar();
-        self.ConfigerNavBar("设定")
+        self.ConfigerNavBar("设定");
+        self.CreatSetTableView();
         
     }
     func ConfigerNavBar(title:NSString) -> Void {
@@ -32,6 +39,70 @@ class SetViewController: TabBarViewController {
         self.view.backgroundColor = UIColor.whiteColor();
         
     }
+    
+    func CreatSetTableView() -> Void {
+        
+        let tableView = UITableView(frame: CGRectMake(0, navBarHeigh, screenWideth, screenHeight - navBarHeigh - tabBarHeight));
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None;
+        tableView.delegate = self;
+        tableView.rowHeight = 45;
+        tableView.sectionHeaderHeight = 17;
+        tableView.dataSource = self;
+        tableView.registerClass(SetTableViewCell.self , forCellReuseIdentifier: "setTableView");
+        self.view.addSubview(tableView);
+        
+    }
+    //MARK:UITableViewDelegate
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let view = UIView();
+        
+        return view;
+    }
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return 4;
+        
+    }
+    
+    //MARK:UITableViewDataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        switch section {
+        case 0:
+            return 1;
+        case 1:
+            tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine;
+            tableView.separatorColor = UIColor.whiteColor();
+            return 3;
+        case 2:
+            tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine;
+            tableView.separatorColor = UIColor.whiteColor();
+            return 3;
+        case 3:
+            return 1;
+        default:
+            return 0;
+        }
+    
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:SetTableViewCell = tableView.dequeueReusableCellWithIdentifier( "setTableView") as! SetTableViewCell;
+        
+        cell.selectionStyle = UITableViewCellSelectionStyle.None;
+        
+        let textArr:NSArray = titleArr![indexPath.section] as! NSArray;
+        
+        let textStr = textArr[indexPath.row];
+        
+        cell.ConfigerTitleLable(textStr as! NSString);
+        
+        return cell;
+    }
+    
+    
     //MARK: 重写父类TabBar按钮响应方法
     override func HomeBtnClick() -> Void
     {

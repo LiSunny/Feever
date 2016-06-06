@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D51502B31D05210F00490CA8 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502B21D05210F00490CA8 /* MessageTableViewCell.swift */; };
+		D51502B61D0548C400490CA8 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502B51D0548C400490CA8 /* SetTableViewCell.swift */; };
+		D51502B91D0554C200490CA8 /* PersonTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502B81D0554C200490CA8 /* PersonTopView.swift */; };
+		D51502BB1D05578D00490CA8 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502BA1D05578D00490CA8 /* PersonTableViewCell.swift */; };
 		D53DBD661CFEB5C000FBF46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */; };
 		D53DBD6B1CFEB5C000FBF46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD691CFEB5C000FBF46B /* Main.storyboard */; };
 		D53DBD6D1CFEB5C000FBF46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD6C1CFEB5C000FBF46B /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		D51502B21D05210F00490CA8 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		D51502B51D0548C400490CA8 /* SetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
+		D51502B81D0554C200490CA8 /* PersonTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTopView.swift; sourceTree = "<group>"; };
+		D51502BA1D05578D00490CA8 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		D53DBD621CFEB5C000FBF46B /* SwiftLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53DBD6A1CFEB5C000FBF46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +105,23 @@
 				D51502B21D05210F00490CA8 /* MessageTableViewCell.swift */,
 			);
 			path = MessageViews;
+			sourceTree = "<group>";
+		};
+		D51502B41D0548AF00490CA8 /* SetViews */ = {
+			isa = PBXGroup;
+			children = (
+				D51502B51D0548C400490CA8 /* SetTableViewCell.swift */,
+			);
+			path = SetViews;
+			sourceTree = "<group>";
+		};
+		D51502B71D0554AE00490CA8 /* PersonViews */ = {
+			isa = PBXGroup;
+			children = (
+				D51502B81D0554C200490CA8 /* PersonTopView.swift */,
+				D51502BA1D05578D00490CA8 /* PersonTableViewCell.swift */,
+			);
+			path = PersonViews;
 			sourceTree = "<group>";
 		};
 		D53DBD591CFEB5C000FBF46B = {
@@ -181,6 +204,8 @@
 		D5591F691D0012AB00A2630B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D51502B71D0554AE00490CA8 /* PersonViews */,
+				D51502B41D0548AF00490CA8 /* SetViews */,
 				D51502B11D05210000490CA8 /* MessageViews */,
 				D5591F6A1D0012AB00A2630B /* HomeViews */,
 			);
@@ -374,6 +399,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51502B61D0548C400490CA8 /* SetTableViewCell.swift in Sources */,
+				D51502B91D0554C200490CA8 /* PersonTopView.swift in Sources */,
 				D5591F771D00137E00A2630B /* ViewController.swift in Sources */,
 				D54FC1D81D0129C4005FFE64 /* SetViewController.swift in Sources */,
 				D54FC1DE1D012B77005FFE64 /* NavgationViewController.swift in Sources */,
@@ -384,6 +411,7 @@
 				D54FC1E01D01534B005FFE64 /* HomeTableViewCell.swift in Sources */,
 				D5591F731D00136F00A2630B /* TabBarViewController.swift in Sources */,
 				D5591F6C1D0012BC00A2630B /* TabBarView.swift in Sources */,
+				D51502BB1D05578D00490CA8 /* PersonTableViewCell.swift in Sources */,
 				D5591F751D00137600A2630B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
