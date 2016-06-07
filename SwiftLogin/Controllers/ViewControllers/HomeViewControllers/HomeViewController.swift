@@ -120,7 +120,13 @@ class HomeViewController: TabBarViewController , UITableViewDelegate, UITableVie
     }
     override func AddBtnClick() -> Void
     {
+        
         print("HOME添加");
+        
+        self.presentViewController(PublishViewController(), animated: true) { 
+            
+        };
+        
         
     }
     override func SetBtnClick() -> Void

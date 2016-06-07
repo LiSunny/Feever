@@ -11,6 +11,7 @@
 		D51502B61D0548C400490CA8 /* SetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502B51D0548C400490CA8 /* SetTableViewCell.swift */; };
 		D51502B91D0554C200490CA8 /* PersonTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502B81D0554C200490CA8 /* PersonTopView.swift */; };
 		D51502BB1D05578D00490CA8 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51502BA1D05578D00490CA8 /* PersonTableViewCell.swift */; };
+		D5322CA11D06734B006D29C0 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5322CA01D06734B006D29C0 /* PublishViewController.swift */; };
 		D53DBD661CFEB5C000FBF46B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */; };
 		D53DBD6B1CFEB5C000FBF46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD691CFEB5C000FBF46B /* Main.storyboard */; };
 		D53DBD6D1CFEB5C000FBF46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53DBD6C1CFEB5C000FBF46B /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		D51502B51D0548C400490CA8 /* SetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableViewCell.swift; sourceTree = "<group>"; };
 		D51502B81D0554C200490CA8 /* PersonTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTopView.swift; sourceTree = "<group>"; };
 		D51502BA1D05578D00490CA8 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		D5322CA01D06734B006D29C0 /* PublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		D53DBD621CFEB5C000FBF46B /* SwiftLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53DBD651CFEB5C000FBF46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D53DBD6A1CFEB5C000FBF46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 				D51502BA1D05578D00490CA8 /* PersonTableViewCell.swift */,
 			);
 			path = PersonViews;
+			sourceTree = "<group>";
+		};
+		D5322C9F1D067339006D29C0 /* PublishViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5322CA01D06734B006D29C0 /* PublishViewController.swift */,
+			);
+			path = PublishViewControllers;
 			sourceTree = "<group>";
 		};
 		D53DBD591CFEB5C000FBF46B = {
@@ -242,6 +252,7 @@
 		D5591F6F1D0012F300A2630B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D5322C9F1D067339006D29C0 /* PublishViewControllers */,
 				D54FC1D41D0129AF005FFE64 /* MessageViewControllers */,
 				D54FC1D51D0129AF005FFE64 /* PersonViewControllers */,
 				D54FC1D61D0129AF005FFE64 /* SetViewControllers */,
@@ -404,6 +415,7 @@
 				D5591F771D00137E00A2630B /* ViewController.swift in Sources */,
 				D54FC1D81D0129C4005FFE64 /* SetViewController.swift in Sources */,
 				D54FC1DE1D012B77005FFE64 /* NavgationViewController.swift in Sources */,
+				D5322CA11D06734B006D29C0 /* PublishViewController.swift in Sources */,
 				D54FC1DC1D012AF0005FFE64 /* MessageViewController.swift in Sources */,
 				D51502B31D05210F00490CA8 /* MessageTableViewCell.swift in Sources */,
 				D53DBD661CFEB5C000FBF46B /* AppDelegate.swift in Sources */,
