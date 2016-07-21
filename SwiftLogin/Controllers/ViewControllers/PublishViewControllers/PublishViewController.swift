@@ -15,6 +15,7 @@ class PublishViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        
         super.viewDidLoad();
         
         self.view.backgroundColor = UIColor.whiteColor();
@@ -41,7 +42,6 @@ class PublishViewController: UIViewController {
         
         let imageArr = ["text","pic","headline","sign","comment","more"];
         let titleArr = ["文字","图片/视频","头条","签到","评论","更多"];
-        
         
         for i in 0 ..< imageArr.count  {
             
